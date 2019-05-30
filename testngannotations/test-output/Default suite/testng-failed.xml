@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="testngpractice.Selenium">
+        <methods>
+          <include name="click_on_input_forms"/>
+          <include name="getTitle"/>
+          <include name="close_the_browser"/>
+          <include name="user_enters_details_and_click_on_send"/>
+          <include name="intialization"/>
+          <include name="click_on_input_form_submit"/>
+          <include name="clickonDemoSite"/>
+          <include name="titleofDemoWebsite"/>
+        </methods>
+      </class> <!-- testngpractice.Selenium -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

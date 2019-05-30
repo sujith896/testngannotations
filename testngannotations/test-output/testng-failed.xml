@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="resources.ExtentReporterNG"/>
+    <listener class-name="resources.MyTransformer"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testngpractice.Selenium">
+        <methods>
+          <include name="click_on_input_forms"/>
+          <include name="getTitle"/>
+          <include name="close_the_browser"/>
+          <include name="user_enters_details_and_click_on_send"/>
+          <include name="intialization"/>
+          <include name="click_on_input_form_submit"/>
+          <include name="clickonDemoSite"/>
+          <include name="titleofDemoWebsite"/>
+        </methods>
+      </class> <!-- testngpractice.Selenium -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testngpractice.Selenium">
+        <methods>
+          <include name="close_the_browser"/>
+          <include name="intialization"/>
+          <include name="titleofDemoWebsite"/>
+        </methods>
+      </class> <!-- testngpractice.Selenium -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
